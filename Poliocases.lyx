@@ -1,0 +1,1690 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{titling}
+\fancyhf{}               % Clear fancy header/footer
+\fancyhead[L]{Presidency University}   % My name in Left footer
+\fancyhead[R]{\theauthor}
+\fancyfoot[C]{\thepage}  % Page number in Right footer
+\fancyfoot[R]{Instructor: AKG Sir}
+
+\makeatletter
+\let\ps@plain\ps@fancy   % Plain page style = fancy page style
+\makeatother
+\end_preamble
+\use_default_options true
+\begin_modules
+knitr
+theorems-std
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 2cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Presidency University
+\begin_inset Newline newline
+\end_inset
+
+The Skill Enhancement Elective Course
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Enter Course Name
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+STAT03SEEC01
+\begin_inset Newline newline
+\end_inset
+
+Data Analysis Project
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Enter assignment number
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Niranjan Dey
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Some Basic Instructions:
+\end_layout
+
+\begin_layout Enumerate
+All the R codes should be at the end of every answer.
+ Within the answer, you should give the output and charts not the codes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Every R chunk should be in 
+\series bold
+Standard Mode
+\series default
+.
+ If however, you need to insert R chunk in Itemize or Enumerate mode, then
+ as soon as the chunk ends leave one blank line after @ (within the red
+ box).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Whenever you insert any R chunk which will produce figure, set the option
+ 
+\series bold
+fig.height=5
+\series default
+ or any suitable number less than that.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Whenever you insert any R chunk which will produce figure and then modifying
+ it (e.g.
+ adding lines, legends, overlapping two plots) set the option 
+\series bold
+fig.show='hold'
+\series default
+ 
+\end_layout
+
+\begin_layout Enumerate
+Never write any R chunk in continuation of some previous line, because then
+ it will not be treated as a code.
+ If you find any R chunk not treated as code in the output, go back at the
+ end of previous line and press ENTER.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Introduction:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The following instruction is assuming that the question you are going to
+ answer contains many parts and subparts.
+ If that is not the case, delete all the part below and just write a single
+ answer.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Poliomyelitis is a crippling disease with dramatically visible impact on
+ the patient.
+ A 1985 eradication program has helped guide a more recently launched global
+ eradication effort.
+ In addition, oral polio vaccine (OPV), given in large-scale programs, has
+ been essential to this success.
+ Before 1955, and the licensure of inactivated polio vaccine (IPV) , poliomyelit
+is was a continuing major cause of permanent disability across the world.
+ In the United States alone, more than 20,000 cases of paralytic polio cases
+ were annually reported during the early 1950s.
+ The process of vaccine manufacture had to be changed, thus resulting in
+ Oral Polio Vaccine (OPV).
+ The success of OPV in the US, Canada, most European countries, and the
+ USSR, made it a logical choice for use in the Americas.
+ Other important reasons to use OPV included the substantially 
+\bar under
+lower cost of OPV compared with IPV
+\bar default
+; the ability of OPV to induce intestinal immunity, thus facilitating the
+ interruption of wild poliovirus transmission; the capacity of OPV viruses
+ to spread and immunize close contacts; the demonstrated efficacy of OPV
+ in controlling outbreaks; the ease of administration of OPV, a significant
+ advantage in mass campaigns; and the potential ability of OPV viruses to
+ displace the circulation of wild poliovirus in the environment.
+ Over the last fifty years the disease has been brought under control by
+ the use of oral vaccine.
+\end_layout
+
+\begin_layout Itemize
+We have a data on Polio Cases from February 1960 to January 1975.
+ Our project is based on 
+\series bold
+Time Series analysis
+\series default
+ of the given data.
+ It is of considerable interest to identify 
+\series bold
+trend
+\series default
+, 
+\series bold
+seasonality
+\series default
+ and other features of data on 
+\series bold
+incidence of polio
+\series default
+.
+\end_layout
+
+\begin_layout Section*
+Data Analysis:
+\end_layout
+
+\begin_layout Standard
+The main problems in the analysis of the time series are:
+\end_layout
+
+\begin_layout Itemize
+To identify the forces or components at work, the net effect of whose interactio
+n is exhibited by the movement of a time series.
+\end_layout
+
+\begin_layout Itemize
+To isolate, study, analyse and measure them independently i.e.
+ by holding other things constant.
+\end_layout
+
+\begin_layout Itemize
+To forecast.
+\end_layout
+
+\begin_layout Subsection*
+Reading and plotting Time Series Data:
+\end_layout
+
+\begin_layout Standard
+We are given a data frame so first we read it using 
+\series bold
+read.table()
+\series default
+ and making it time series using function 
+\series bold
+ts()
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+P=read.table("D:
+\backslash
+
+\backslash
+Niranjan Dey
+\backslash
+
+\backslash
+Poliocases.csv",header=T,sep=",")
+\end_layout
+
+\begin_layout Plain Layout
+
+T <- ts(P$cases , start = c(1960,2) , end = c(1975,1) , frequency = 12)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Plotting time series and Yearwise aggregated data:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=4,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(T,main=
+\begin_inset Quotes erd
+\end_inset
+
+Time Series Data
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=3.5,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(aggregate(T),main=
+\begin_inset Quotes erd
+\end_inset
+
+Yearwise Aggregated data
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Aggregated data shows that there is a peak of poliocases in most of the
+ even years (like '60,'64,'66,'68,'72) and a trough in poliocases in almost
+ all of odd years.
+\end_layout
+
+\begin_layout Itemize
+In this case, it appears that an 
+\series bold
+additive model is not appropriate
+\series default
+ for describing this time series, since the size of the seasonal fluctuations
+ and random fluctuations seem to increase with the level of the time series.
+ Thus, we may need to transform the time series in order to get a transformed
+ time series that can be described using an additive model.
+ We can transform the time series by calculating the natural log of the
+ original data:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=4,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(log(T),main=
+\begin_inset Quotes erd
+\end_inset
+
+log of the given data
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Here we can see that the size of the seasonal fluctuations and random fluctuatio
+ns in the log-transformed time series seem to be roughly constant over time,
+ and do not depend on the level of the time series.
+ Thus, the log-transformed time series can probably be described using an
+ additive model.
+\end_layout
+
+\begin_layout Subsection*
+Decomposing Time Series:
+\end_layout
+
+\begin_layout Standard
+Decomposing a time series means separating it into its constituent components,
+ which are usually a trend component and an irregular component, and if
+ it is a seasonal time series, a seasonal component.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=4.7,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+T.addi=decompose(T)
+\end_layout
+
+\begin_layout Plain Layout
+
+T.mul=decompose(T,type="mult") 
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(T.addi)                                                           
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=4.7,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+T.addi=decompose(T)
+\end_layout
+
+\begin_layout Plain Layout
+
+T.mul=decompose(T,type="mult")
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(T.mul)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The estimated values of the trend component: (12 point moving averages)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+T.addi$trend
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The estimated values of the seasonal component:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+T.addi$figure
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=5,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(T~cycle(T),main=
+\begin_inset Quotes erd
+\end_inset
+
+Monthwise boxplot
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The estimated seasonal factors are given for the months January-December,
+ and are the same for each year.
+ The largest seasonal factor is for July (about 2.07148), and the lowest
+ is for February (about 0.3927455), indicating that there seems to be a peak
+ in poliocases in July and a trough in poliocases in February each year.
+ Also the 
+\series bold
+boxplot supports the conclution
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+Seasonally Adjusting:
+\end_layout
+
+\begin_layout Standard
+We have a seasonal time series that can be described using an multiplicaitive
+ model, you can seasonally adjust the time series by estimating the seasonal
+ component, and dividing the estimated seasonal component from the original
+ time series.
+ Then plotting the seasonally adjusted time series using the “plot()” function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=4,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+Tsad=(T/T.mul$seasonal)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Tsad,main=
+\begin_inset Quotes erd
+\end_inset
+
+Seasonally adjusted
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+You can see that the seasonal variation has been removed from the seasonally
+ adjusted time series.
+ The seasonally adjusted time series now just contains the trend component
+ and an irregular component.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Justification of Seasonal Adjustment: 
+\end_layout
+
+\begin_layout Standard
+Now we will find standard deviations of the original series, trend, and
+ random element seperately:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+sd(T[7:174])
+\end_layout
+
+\begin_layout Plain Layout
+
+sd(T[7:174]-T.mul$trend[7:174])
+\end_layout
+
+\begin_layout Plain Layout
+
+sd(T.mul$random[7:174])
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The reduction in the standard deviation shows that the seasonal adjustment
+ has been very effective.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=3.7,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+acf(T,lag.max=12,main=
+\begin_inset Quotes erd
+\end_inset
+
+ACF of the given data
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+For monthly series, a significant autocorrelation at lag 12 indicates that
+ the seasonal adjustment is adequate.
+\end_layout
+
+\begin_layout Subsection*
+Random element:
+\end_layout
+
+\begin_layout Standard
+First to compare between Additive model & Multiplicative model we shall
+ look at the correlogram of the ramdom element:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=3.7,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+acf(T.addi$random[7:174],main=
+\begin_inset Quotes erd
+\end_inset
+
+ACF of random element for Additive model
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=3.3,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+acf(T.mul$random[7:174],main=
+\begin_inset Quotes erd
+\end_inset
+
+ACF of random element for Multiplicative model
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+It is clear that Autocorrelation exceeds confidence bound more number of
+ cases in Additive Model than Multiplicative Model.
+\end_layout
+
+\begin_layout Subsection*
+Adding a Straight line by Least Squares Method:
+\end_layout
+
+\begin_layout Standard
+The linear model of first degree is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+m1=lm(T~time(T))
+\end_layout
+
+\begin_layout Plain Layout
+
+m1
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=3.5,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(T,main=
+\begin_inset Quotes erd
+\end_inset
+
+Fitting Linear trend
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(m1)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=4,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+acf(T,lag.max=200)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The correlogram for wave heights has a well-defined shape that appears like
+ a sampled damped cosine function.
+ This is typical of correlograms of time series generated by an autoregressive
+ model of order 2 
+\series bold
+AR(2).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+Tht=-6887.328+3.528*time(T)
+\end_layout
+
+\begin_layout Plain Layout
+
+cor(T,Tht)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Correlation between observed and fitted values is very low (about 
+\series bold
+0.3343).
+\end_layout
+
+\begin_layout Subsection*
+To test if the time series is stationary:
+\end_layout
+
+\begin_layout Standard
+Use Augmented Dickey-Fuller Test (adf test).
+ A p-Value of less than 0.05 in adf.test() indicates that it is stationary.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<comment=NA,warning=F>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+library(tseries)
+\end_layout
+
+\begin_layout Plain Layout
+
+adf.test(T) # p-value < 0.05 indicates the TS is stationary
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Hence the data given is stationary.
+
+\series bold
+ No need to make it stationary.
+\end_layout
+
+\begin_layout Subsection*
+Holt’s Exponential Smoothing:
+\end_layout
+
+\begin_layout Itemize
+Holt-Winters exponential smoothing estimates the level, slope and seasonal
+ component at the current time point.
+ Smoothing is controlled by three parameters: alpha, beta, and gamma, for
+ the estimates of the level, slope b of the trend component, and the seasonal
+ component, respectively, at the current time point.
+ The parameters alpha, beta and gamma all have values between 0 and 1, and
+ values that are close to 0 mean that relatively little weight is placed
+ on the most recent observations when making forecasts of future values.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<comment=NA,warning=F>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+library(forecast)
+\end_layout
+
+\begin_layout Plain Layout
+
+H=HoltWinters(log(T))
+\end_layout
+
+\begin_layout Plain Layout
+
+H
+\end_layout
+
+\begin_layout Plain Layout
+
+H$SSE   #---Measure of Error---
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The estimated values of alpha, beta and gamma are 0.749, 0.01, and 0.956, respectiv
+ely.
+ The value of alpha (0.749) is high enough, indicating that the estimate
+ of the level at the current time point is based upon mainly recent observations
+ and some observations in the more distant past.
+ The value of beta is 0.01, indicating that the estimate of the slope b of
+ the trend component is not updated over the time series, and instead is
+ set equal to its initial value.
+ This makes good intuitive sense, as the level changes quite a bit over
+ the time series, but the slope b of the trend component remains roughly
+ the same.
+ In contrast, the value of gamma (0.956) is high, indicating that the 
+\series bold
+estimate of the seasonal component
+\series default
+ at the current time point is just based upon very recent observations.
+\end_layout
+
+\begin_layout Itemize
+As for simple exponential smoothing and Holt’s exponential smoothing, we
+ can plot the original time series as a black line, with the forecasted
+ values as a red line on top of that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=4,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(H)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We see from the plot that the Holt-Winters exponential method is very successful
+ in predicting the seasonal peaks, which occur roughly in July every year.
+\end_layout
+
+\begin_layout Subsection*
+Forecasts using Exponential Smoothing:
+\end_layout
+
+\begin_layout Itemize
+To make forecasts for future times not included in the original time series,
+ we use the “forecast()” function in the “forecast” package.
+ For example, the original data for Poliocases is from February 1960 to
+ January 1975.
+ If we wanted to make 
+\series bold
+forecasts for February 1975 to January 1976 (12 more months)
+\series default
+, and plot the forecasts:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,fig.height=4,fig.show='hold'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+K=forecast(H, h=12) 
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(K)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The forecasts are shown as a blue line, and the 
+\bar under
+dark gray and light gray shaded areas show 80% and 95% prediction intervals
+\bar default
+, respectively.
+\end_layout
+
+\begin_layout Section*
+Conclusion and Discussions:
+\end_layout
+
+\begin_layout Standard
+Based on our Data analysis,
+\end_layout
+
+\begin_layout Standard
+(i) We verify the fact that in the light of the given data, the linear trend
+ fails to explain the data.
+ The correlation between observed and fitted values is low (about 
+\series bold
+0.3343
+\series default
+) for linear trend.
+\end_layout
+
+\begin_layout Standard
+(ii) In this data the seasonal component is strong enough as expressed in
+ both Decomposition & Holt’s Exponential Smoothing.
+\end_layout
+
+\begin_layout Standard
+(iii) From observation the largest seasonal factor is for July (about 2.07148),
+ and the lowest is for February (about 0.3927455).
+\end_layout
+
+\begin_layout Standard
+(iv) In the light of given data, there is a peak of poliocases in most of
+ the 
+\series bold
+even years
+\series default
+ (like '60,'64,'66,'68,'72) and a trough in poliocases in almost all of
+ 
+\series bold
+odd years
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+(v) It is evident that 
+\bar under
+Multiplicative Model fits the better
+\bar default
+ than Additive Model comparing the random element.
+\end_layout
+
+\begin_layout Standard
+(vi) The random element has small standard deviation and Autocorrelation
+ does not exceeds the confidence levels for most of the time.
+ So it can be ignored.
+\end_layout
+
+\begin_layout Section*
+R codes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<eval=F>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+#---Reading and plotting Time Series Data---
+\end_layout
+
+\begin_layout Plain Layout
+
+P=read.table("D:
+\backslash
+
+\backslash
+Niranjan Dey
+\backslash
+
+\backslash
+Poliocases.csv",header=T,sep=",")
+\end_layout
+
+\begin_layout Plain Layout
+
+T <- ts(P$cases , start = c(1960,2) , end = c(1975,1) , frequency = 12)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(T,main=
+\begin_inset Quotes erd
+\end_inset
+
+Time Series Data
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(aggregate(T),main=
+\begin_inset Quotes erd
+\end_inset
+
+Yearwise Aggregated data
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(log(T),main=
+\begin_inset Quotes erd
+\end_inset
+
+log of the given data
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+#---Decomposing Time Series---
+\end_layout
+
+\begin_layout Plain Layout
+
+T.addi=decompose(T)
+\end_layout
+
+\begin_layout Plain Layout
+
+T.mul=decompose(T,type="mult") 
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(T.addi)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(T.mul)
+\end_layout
+
+\begin_layout Plain Layout
+
+T.addi$trend
+\end_layout
+
+\begin_layout Plain Layout
+
+T.addi$figure
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(T~cycle(T),main=
+\begin_inset Quotes erd
+\end_inset
+
+Monthwise boxplot
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+#---Seasonal Adjustment---
+\end_layout
+
+\begin_layout Plain Layout
+
+Tsad=(T/T.mul$seasonal)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Tsad,main=
+\begin_inset Quotes erd
+\end_inset
+
+Seasonally adjusted
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+sd(T[7:174])
+\end_layout
+
+\begin_layout Plain Layout
+
+sd(T[7:174]-T.mul$trend[7:174])
+\end_layout
+
+\begin_layout Plain Layout
+
+sd(T.mul$random[7:174])
+\end_layout
+
+\begin_layout Plain Layout
+
+acf(T,lag.max=12)
+\end_layout
+
+\begin_layout Plain Layout
+
+#---Random element---
+\end_layout
+
+\begin_layout Plain Layout
+
+acf(T.addi$random[7:174],main=
+\begin_inset Quotes erd
+\end_inset
+
+ACF of random element for Additive model
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+acf(T.mul$random[7:174],main=
+\begin_inset Quotes erd
+\end_inset
+
+ACF of random element for Multiplicative model
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+#---Adding a Straight line by Least Squares Method---
+\end_layout
+
+\begin_layout Plain Layout
+
+m1=lm(T~time(T))
+\end_layout
+
+\begin_layout Plain Layout
+
+m1
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(T,main=
+\begin_inset Quotes erd
+\end_inset
+
+Fitting Linear trend
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(m1)
+\end_layout
+
+\begin_layout Plain Layout
+
+acf(T,lag.max=200)
+\end_layout
+
+\begin_layout Plain Layout
+
+Tht=-6887.328+3.528*time(T)
+\end_layout
+
+\begin_layout Plain Layout
+
+cor(T,Tht)
+\end_layout
+
+\begin_layout Plain Layout
+
+#---To test if the time series is stationary---
+\end_layout
+
+\begin_layout Plain Layout
+
+library(tseries)
+\end_layout
+
+\begin_layout Plain Layout
+
+adf.test(T) #---p-value < 0.05 indicates the TS is stationary
+\end_layout
+
+\begin_layout Plain Layout
+
+#---Holts Exponential Smoothing---
+\end_layout
+
+\begin_layout Plain Layout
+
+library(forecast)
+\end_layout
+
+\begin_layout Plain Layout
+
+H=HoltWinters(log(T))
+\end_layout
+
+\begin_layout Plain Layout
+
+H
+\end_layout
+
+\begin_layout Plain Layout
+
+H$SSE
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(H)
+\end_layout
+
+\begin_layout Plain Layout
+
+K=forecast(H, h=12) 
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(K)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+References:
+\end_layout
+
+\begin_layout Standard
+The following books were used as a reference to the analysis done in the
+ report:-
+\end_layout
+
+\begin_layout Itemize
+Fundamentals of Applied Statistics, by S.C.
+ Gupta & V.K.
+ Kapoor
+\end_layout
+
+\begin_layout Itemize
+Time Series Analysis Jonathan With Applications in R, by D.
+ Cryer ,Kung-Sik Chan
+\end_layout
+
+\begin_layout Itemize
+Introductory Time Series with R, by Paul S.P.
+ Cowpertwait · Andrew V.
+ Metcalfe
+\end_layout
+
+\begin_layout Itemize
+Time Series Analysis and Its Applications With R Examples, by Robert H.
+ Shumway , David S.
+ Stoffer
+\end_layout
+
+\begin_layout Itemize
+[online] Available from : http://r-statistics.co/Time-Series-Analysis-With-R.html
+\end_layout
+
+\begin_layout Itemize
+[online] Available from : https://a-little-book-of-r-for-time-series.readthedocs.i
+o/en/latest/src/timeseries.html
+\end_layout
+
+\begin_layout Itemize
+[online] Available from : https://www.statmethods.net/advstats/timeseries.html
+\end_layout
+
+\begin_layout Section*
+Acknowledgment:
+\end_layout
+
+\begin_layout Standard
+I would like to express my sincere gratitude to my respected instructor
+ 
+\series bold
+Prof.
+ Atanu Kumar Ghosh
+\series default
+ for his guidance and constant supervision as well as for providing all
+ the necessary information regarding the project & also for his support
+ in completing this project.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Some Final Tips:
+\end_layout
+
+\begin_layout Enumerate
+Generally you should be able to produce a good pdf with all R codes and
+ outputs integrated with previous instructions.
+ If however you feel, you need to change the page margins (make them small,
+ so that the document become less lengthy), you can do that from 
+\series bold
+Document˃Settings˃Page Margins.
+\end_layout
+
+\begin_layout Enumerate
+If you feel you have many numerics to be reported, just insert a table.
+ 
+\end_layout
+
+\begin_layout Enumerate
+In all the R chunks where you load a package include the option 
+\series bold
+message=F
+\series default
+ and one line in the beginning 
+\series bold
+options(warn=-1)
+\series default
+ to avoid any warnings and messages.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
